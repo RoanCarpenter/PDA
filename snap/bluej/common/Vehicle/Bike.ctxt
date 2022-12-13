@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Bike
+comment1.params=
+comment1.target=void\ ranOverNail()
+comment2.params=
+comment2.target=void\ fixTire()
+comment3.params=name\ speed
+comment3.target=Bike(java.lang.String,\ double)
+numComments=4
