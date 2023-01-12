@@ -8,8 +8,8 @@ import java.util.InputMismatchException;
  */
 public class PDA
 {
-    int age; 
-    int HIGHER_BOUND = 13;
+    double age; 
+    int HIGHER_BOUND = 14;
     int LOWER_BOUND = 13;
     Scanner scanner = new Scanner(System.in);
     boolean shouldContinue  = true;
@@ -49,13 +49,15 @@ public class PDA
         }
     } 
 
-    public void getYoungerAge(int age) { 
-        System.out.println("The minimun age is " + ((age/2) + 7));
+    public void getYoungerAge(double age) { 
+        System.out.println("The minimum age is " + Math.ceil((age/2) + 7));
     }
 
-    public void getOlderAge(int age){
-        System.out.println("The maximum age is " + ((age*2) - 7));
-    }
+    public void getOlderAge(double age){
+        System.out.println("The maximum age is " + Math.floor((age-7)*2));
+    } 
+    
+    
 
     /**
      * The main method instantiates and runs the program
